@@ -1,0 +1,46 @@
+@import "switch";
+@import "bootstrap";
+
+
+body {
+    background: #eee;
+}
+
+.container {
+    padding: 10px;
+}
+
+.header {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+}
+
+#stack-technologies {
+    list-style: none;
+    -webkit-padding-start: 0px;
+}
+
+.stack-item {
+    @extend .col-xs-6;
+    @extend .col-sm-3;
+    @extend .col-md-2;
+    margin: 10px 0;
+
+    .wrapper {
+        padding: 10px;
+        text-align: center;
+        height: 100%;
+        color: #333;
+
+        img {
+            @extend .thumbnail;
+            @extend .img-circle;
+
+            border-radius: 50px;
+            margin: 0 auto;
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
