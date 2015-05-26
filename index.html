@@ -106,6 +106,8 @@
                                 <span class="title">Grails</span>
                             </div>
                         </li>
+                        <li id="stack-item-react" class="stack-item">
+                        </li>
                     </div>
                 </ul>
         </section>
@@ -120,10 +122,12 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
             <script src="javascripts/components/fancy-checkbox.jsx" type="text/jsx"></script>
+            <script src="javascripts/components/thumbnail.jsx" type="text/jsx"></script>
             <script src="javascripts/stack.js"></script>
             <script type="text/jsx">
 $(document).ready(function() {
                 React.render(<FancyCheckbox className="form-group" label="add to showcase?"/>, document.getElementById('add-to-showcase'))
+                React.render(<Thumbnail title="Grails" src="https://lh3.googleusercontent.com/-beCwYp8iz6s/VPmwsc3fanI/AAAAAAAAAQk/xXXrIBRZi9s/s426/mcachedl_m0AJkq"/>, document.getElementById('stack-item-react'))
 });
             </script>
     </body>
