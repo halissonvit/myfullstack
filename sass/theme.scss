@@ -16,7 +16,7 @@ body {
     padding: 10px;
 }
 
-#stack-technologies {
+.stack {
     list-style: none;
     -webkit-padding-start: 0px;
 }
@@ -26,6 +26,8 @@ body {
     @extend .col-sm-3;
     @extend .col-md-2;
     margin: 10px 0;
+    height: 170px;
+    overflow: hidden;
 
     .wrapper {
         padding: 10px;
