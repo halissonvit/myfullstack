@@ -38,6 +38,7 @@
                 <header>
                     <h2 id="stack-name" class="subtitle editable">Backend stack</h2> 
 
+                    <div id="add-to-showcase"> </div>
                     <div class="form-group">
                         <input type="checkbox" id="checkbox1" name="checkbox1" class="switch" />
                         <label for="checkbox1">add to showcase?</label>
@@ -118,7 +119,12 @@
             <!-- Latest compiled and minified JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-
+            <script src="javascripts/components/fancy-checkbox.jsx" type="text/jsx"></script>
             <script src="javascripts/stack.js"></script>
+            <script type="text/jsx">
+$(document).ready(function() {
+                React.render(<FancyCheckbox className="form-group" label="add to showcase?"/>, document.getElementById('add-to-showcase'))
+});
+            </script>
     </body>
 </html>
