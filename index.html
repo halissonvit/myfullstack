@@ -32,84 +32,7 @@
     <h2 class="subtitle center">Choose the technologies to compose your stack</h2>
   </div>
 </header>
-<section class="container" id="stack-mounting-react">
-</section>
-
-<section class="container" id="stack-mounting">
-  <div id="current-stack">
-    <header>
-      <h2 id="stack-name" class="subtitle editable">Backend stack</h2>
-
-      <div id="add-to-showcase"> </div>
-      <div class="form-group">
-        <input type="checkbox" id="checkbox1" name="checkbox1" class="switch" />
-        <label for="checkbox1">add to showcase?</label>
-      </div>
-    </header>
-
-    <section id="add-technologies-section">
-      <form>
-        <div class="form-group">
-          <label class="sr-only" for="technology">Choose a technology and add to your stack</label>
-          <input type="text" class="form-control" id="technology" placeholder="Choose a technology and add to your stack...">
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Add to my stack...</button>
-      </form>
-    </section>
-
-    <ul id="stack-technologies" class="stack">
-      <div class="container">
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="http://www.johnidouglas.com.br/wp-content/uploads/2014/12/ruby.png" class="thumbnail"> <span class="title">Ruby</span> </div> </li> <li class="stack-item"> <div class="wrapper"> <image src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/150px-Ruby_on_Rails.svg.png" class="thumbnail">
-          <span class="title">Ruby on Rails</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="https://avatars1.githubusercontent.com/u/8312?v=3&s=400" class="thumbnail">
-          <span class="title">Sinatra</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="https://node-os.com/images/nodejs.png" class="thumbnail">
-          <span class="title">NodeJS</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="http://georgevmathew.com/images/logos/express.png" class="thumbnail">
-          <span class="title">ExpressJS</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="https://31.media.tumblr.com/7601a16f1e970bad6717ba5f386466d0/tumblr_inline_mz51cb9Ezv1qfxp6j.jpg" class="thumbnail">
-          <span class="title">SailsJS</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="http://www.ophtek.com/wp-content/uploads/2014/08/java_tech.jpg" class="thumbnail">
-          <span class="title">Java</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="http://www.craigburke.com/images/posts/groovy-logo.png" class="thumbnail">
-          <span class="title">Groovy</span>
-        </div>
-        </li>
-        <li class="stack-item">
-        <div class="wrapper">
-          <image src="https://lh3.googleusercontent.com/-beCwYp8iz6s/VPmwsc3fanI/AAAAAAAAAQk/xXXrIBRZi9s/s426/mcachedl_m0AJkq" class="thumbnail">
-          <span class="title">Grails</span>
-        </div>
-        </li>
-      </div>
-    </ul>
-  </section>
+<section class="container" id="stack-mounting"></section>
   <!-- stack-mounting -->
 </div>
 <!-- container -->
@@ -126,12 +49,8 @@
 <script src="javascripts/components/add_technology_to_my_stack.jsx" type="text/jsx"></script>
 <script src="javascripts/components/editable.jsx" type="text/jsx"></script>
 <script src="javascripts/components/edit_stack.jsx" type="text/jsx"></script>
-<script src="javascripts/stack.js"></script>
 <script type="text/jsx">
-$(document).ready(function() {
-        React.render(<EditStack />, document.getElementById('stack-mounting-react'));
-});
-
+React.render(<EditStack />, document.getElementById('stack-mounting'));
 </script>
 </body>
 </html>
