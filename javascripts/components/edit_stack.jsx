@@ -5,7 +5,7 @@ var EditStack = React.createClass({
     return(
       <div className="stack-edit">
         <Editable element="h2">Backend stack</Editable>
-        <FancyCheckbox className="form-group" label="add to showcase?" />
+        <FancyCheckbox wrapperClass="form-group"> add to showcase? </FancyCheckbox>
         <AddTechnologyToMyStack />
         <ThumbnailGallery items={galleryItems} galleryClass="stack" itemClass="stack-item" />
       </div>

@@ -1,14 +1,18 @@
 var FancyCheckbox = React.createClass({
+  getDefaultProps: function() {
+    return {
+      id: 'fancy-checkbox',
+      name: 'fancy-checkbox',
+      label: 'enabled?',
+      wrapperClass: 'wrapper',
+      className: ''
+    }
+  },
   render: function() {
-    var id = this.props.id ? this.props.id : "fancy-checkbox";
-    var name = this.props.name ? this.props.name : id;
-    var label = this.props.label ? this.props.label : 'checked?';
-    var className = this.props.className ? this.props.className : 'form-group';
-
     return (
-      <div className={className}>
-      <input type="checkbox" id={id} className="switch" name={name} />
-      <label htmlFor={id}>{label}</label>
+      <div className={this.props.wrapperClass}>
+        <input type="checkbox" id={this.props.id} className="switch {className}" name={this.props.name} />
+        <label htmlFor={this.props.id}>{this.props.children}</label>
       </div>
     );
   }
