@@ -127,9 +127,9 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
-<script src="javascripts/components/fancy-checkbox.jsx" type="text/jsx"></script>
+<script src="javascripts/components/fancy_checkbox.jsx" type="text/jsx"></script>
 <script src="javascripts/components/thumbnail.jsx" type="text/jsx"></script>
-<script src="javascripts/components/thumbnail-gallery.jsx" type="text/jsx"></script>
+<script src="javascripts/components/thumbnail_gallery.jsx" type="text/jsx"></script>
 <script src="javascripts/components/add_technology_to_my_stack.jsx" type="text/jsx"></script>
 <script src="javascripts/components/editable.jsx" type="text/jsx"></script>
 <script src="javascripts/stack.js"></script>
@@ -142,9 +142,10 @@ $(document).ready(function() {
 
 
         React.render(<ThumbnailGallery items={galleryItems} galleryClass="stack" itemClass="stack-item"/>, document.getElementById('stack-technologies-react'));
-});
+
         React.render(<AddTechnologyToMyStack />, document.getElementById('add-technologies-section-react'))
         React.render(<Editable element="h2">Backend stack</Editable>, document.getElementById('editable-react'))
+});
 
 </script>
 </body>
