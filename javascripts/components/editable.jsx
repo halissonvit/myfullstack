@@ -1,4 +1,9 @@
 var Editable = React.createClass({
+  getDefaultProps: function() {
+    return {
+      elementName: 'span'
+    }
+  },
   componentDidMount: function() {
     var el = React.findDOMNode(this);
     $(el).editable();
