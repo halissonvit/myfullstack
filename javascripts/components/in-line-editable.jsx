@@ -1,4 +1,4 @@
-var Editable = React.createClass({
+var InLineEditable = React.createClass({
   getDefaultProps: function() {
     return {
       elementName: 'span'
